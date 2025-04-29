@@ -6,7 +6,6 @@ import Proyectos from "./components/Proyectos";
 import Habilidades from "./components/Habilidades";
 import Contacto from "./components/Contacto";
 import './i18n';
-import 'font-awesome/css/font-awesome.min.css';
 import Footer from "./components/Footer";
 
 const App = () => {

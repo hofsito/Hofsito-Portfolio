@@ -12,7 +12,7 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: "es", // Idioma por defecto
-    debug: true,
+    debug: false,
     lng: idiomaGuardado || undefined, // Si hay idioma guardado, lo usa. Si no, usa detector.
     interpolation: {
       escapeValue: false, // React ya se encarga de la seguridad
