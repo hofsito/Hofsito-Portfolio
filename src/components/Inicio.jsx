@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import IdiomaSelector from "./IdiomaSelector";
+import { FaGithub, FaInstagram, FaLinkedin, FaBriefcase } from 'react-icons/fa';
 
 const buttonVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -68,8 +69,8 @@ const Inicio = () => {
         ))}
       </div>
 
-      {/* Redes sociales */}
-      <div className="mt-16 flex justify-center gap-6 text-2xl">
+     {/* Redes sociales */}
+     <div className="mt-16 flex justify-center gap-6 text-2xl">
         <a
           href="https://github.com/hofsito"
           target="_blank"
@@ -77,7 +78,7 @@ const Inicio = () => {
           className="hover:text-purple-400"
           aria-label="Perfil de GitHub de Hofsito"
         >
-          <i className="fa fa-github"></i>
+          <FaGithub />
         </a>
         <a
           href="https://www.instagram.com/hofsito"
@@ -86,7 +87,7 @@ const Inicio = () => {
           className="hover:text-pink-400"
           aria-label="Perfil de Instagram de Hofsito"
         >
-          <i className="fa fa-instagram"></i>
+          <FaInstagram />
         </a>
         <a
           href="https://www.linkedin.com/in/adiel-esteban-grazt-salamanca-b89a5233b"
@@ -95,7 +96,7 @@ const Inicio = () => {
           className="hover:text-blue-400"
           aria-label="Perfil de LinkedIn de Hofsito"
         >
-          <i className="fa fa-linkedin"></i>
+          <FaLinkedin />
         </a>
         <a
           href="https://www.workana.com/freelancer/a039b2215cfb6d8c51a1bd86ec6bfd5a"
@@ -104,7 +105,7 @@ const Inicio = () => {
           className="hover:text-green-400"
           aria-label="Perfil de Workana de Hofsito"
         >
-          <i className="fa fa-briefcase"></i>
+          <FaBriefcase />
         </a>
       </div>
     </section>
