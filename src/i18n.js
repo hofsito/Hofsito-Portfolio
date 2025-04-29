@@ -1,4 +1,3 @@
-// src/i18n.js
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
@@ -22,7 +21,7 @@ i18n
       useSuspense: false,
     },
     backend: {
-      loadPath: "/src/Idiomas/{{lng}}/translation.json", // Ruta de las traducciones
+      loadPath: `${import.meta.env.BASE_URL}src/Idiomas/{{lng}}/translation.json`, // Ruta ajustada para GitHub Pages
     },
   });
 
