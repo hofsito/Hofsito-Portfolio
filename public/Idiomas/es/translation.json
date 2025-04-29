@@ -27,6 +27,12 @@
   "mensajeEnviado": "¡Mensaje enviado exitosamente!",
   "errorEnvio": "Hubo un error al enviar el mensaje. Inténtalo de nuevo.",
   "copyright": "© 2025 Todos los derechos reservados",
-  "footerHofsito": "/ Hecho por Hofsito"
+  "footerHofsito": "/ Hecho por Hofsito",
+  "mis_proyectos": "Mis Proyectos",
+  "proyecto_1": "Proyecto 1",
+  "proyecto_2": "Proyecto 2",
+  "proyecto_3": "Proyecto 3",
+  "descripcion": "Descripción breve del proyecto.",
+  "contacto_message": "Si te interesa ser el primero de muchos proyectos, no dudes en contactarme."
 }
 

@@ -27,7 +27,13 @@
   "mensajeEnviado": "メッセージが正常に送信されました！",
   "errorEnvio": "メッセージの送信中にエラーが発生しました。もう一度お試しください。",
   "copyright": "© 2025 すべての権利を保有",
-  "footerHofsito": "Hofsito によって作成されました"
+  "footerHofsito": "Hofsito によって作成されました",
+  "mis_proyectos": "私のプロジェクト",
+  "proyecto_1": "プロジェクト1",
+  "proyecto_2": "プロジェクト2",
+  "proyecto_3": "プロジェクト3",
+  "descripcion": "プロジェクトの簡単な説明。",
+  "contacto_message": "多くのプロジェクトの最初になりたい場合は、お気軽にお問い合わせください。"
 }
 
 
