@@ -2,16 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import IdiomaSelector from "./IdiomaSelector"; 
+import IdiomaSelector from "./IdiomaSelector";
 import 'font-awesome/css/font-awesome.min.css';
-import Footer from "./Footer";
 
 const buttonVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: (i) => ({
+  visible: (custom) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.2, duration: 0.6, ease: "easeOut" },
+    transition: { delay: custom * 0.2, duration: 0.6, ease: "easeOut" },
   }),
 };
 
@@ -19,10 +18,10 @@ const Inicio = () => {
   const { t } = useTranslation();
 
   const botones = [
-    { path: "/sobremi", label: t("sobreMi") },
-    { path: "/habilidades", label: t("habilidades") },
-    { path: "/proyectos", label: t("proyectos") },
-    { path: "/contacto", label: t("contacto") },
+    { path: "/sobremi", key: "sobreMi" },
+    { path: "/habilidades", key: "habilidades" },
+    { path: "/proyectos", key: "proyectos" },
+    { path: "/contacto", key: "contacto" },
   ];
 
   return (
@@ -60,14 +59,14 @@ const Inicio = () => {
               to={btn.path}
               className="px-8 py-3 bg-purple-800 hover:bg-purple-900 text-lg font-semibold text-white rounded-full shadow-xl transition-transform transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-600"
             >
-              {btn.label}
+              {t(btn.key)}
             </Link>
           </motion.div>
         ))}
       </div>
 
       {/* Redes sociales */}
-      <div className="mt-16 flex justify-center gap-6 text-white text-2xl">
+      <div className="mt-16 flex justify-center gap-6 text-2xl">
         <a
           href="https://github.com/hofsito"
           target="_blank"
