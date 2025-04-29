@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import IdiomaSelector from "./IdiomaSelector";
-import 'font-awesome/css/font-awesome.min.css';
 
 const buttonVariants = {
   hidden: { opacity: 0, y: 20 },
