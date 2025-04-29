@@ -7,7 +7,9 @@ const IdiomaSelector = () => {
   const { i18n } = useTranslation();
 
   const cambiarIdioma = (e) => {
-    i18n.changeLanguage(e.target.value); // Cambia el idioma 
+    const nuevoIdioma = e.target.value;
+    i18n.changeLanguage(nuevoIdioma);        // Cambiar idioma en i18n
+    localStorage.setItem('idioma', nuevoIdioma); // Guardar en localStorage
   };
 
   return (
@@ -18,7 +20,7 @@ const IdiomaSelector = () => {
       className="absolute top-6 right-6"
     >
       <select
-        value={i18n.language} // Sincronizacion
+        value={i18n.language}
         onChange={cambiarIdioma}
         className="bg-gray-800 text-white px-4 py-2 rounded-md border border-gray-700 focus:outline-none shadow-lg hover:bg-gray-700 transition-colors appearance-none cursor-pointer"
         style={{
