@@ -75,6 +75,7 @@ const Inicio = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-purple-400"
+          aria-label="Perfil de GitHub de Hofsito"
         >
           <i className="fa fa-github"></i>
         </a>
@@ -83,6 +84,7 @@ const Inicio = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-pink-400"
+          aria-label="Perfil de Instagram de Hofsito"
         >
           <i className="fa fa-instagram"></i>
         </a>
@@ -91,6 +93,7 @@ const Inicio = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-blue-400"
+          aria-label="Perfil de LinkedIn de Hofsito"
         >
           <i className="fa fa-linkedin"></i>
         </a>
@@ -99,6 +102,7 @@ const Inicio = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-green-400"
+          aria-label="Perfil de Workana de Hofsito"
         >
           <i className="fa fa-briefcase"></i>
         </a>
