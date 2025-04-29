@@ -14,7 +14,7 @@ const buttonVariants = {
 };
 
 const Proyectos = () => {
-  const { t, i18n } = useTranslation(); // Obtener la función de traducción
+  const { t } = useTranslation(); // Obtener la función de traducción
 
   return (
     <section className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white flex flex-col items-center justify-center px-6 text-center font-sans relative">
@@ -49,7 +49,7 @@ const Proyectos = () => {
         >
           <h3 className="text-2xl font-semibold">{t('proyecto_1')}</h3>
           <p className="mt-2">
-            {t('descripcion')} En este proyecto trabajé en un sistema de gestión de inventarios, utilizando tecnologías como React y Node.js.
+            {t('descripcion')}
           </p>
         </motion.div>
 
@@ -62,7 +62,7 @@ const Proyectos = () => {
         >
           <h3 className="text-2xl font-semibold">{t('proyecto_2')}</h3>
           <p className="mt-2">
-            {t('descripcion')} Este proyecto consistió en una aplicación móvil para monitorear hábitos de ejercicio, utilizando Flutter.
+            {t('descripcion')}
           </p>
         </motion.div>
 
@@ -75,7 +75,7 @@ const Proyectos = () => {
         >
           <h3 className="text-2xl font-semibold">{t('proyecto_3')}</h3>
           <p className="mt-2">
-            {t('descripcion')} Desarrollo de una página web de comercio electrónico con funcionalidades avanzadas de carrito de compras.
+            {t('descripcion')}
           </p>
         </motion.div>
       </div>
@@ -109,3 +109,4 @@ const Proyectos = () => {
 };
 
 export default Proyectos;
+
