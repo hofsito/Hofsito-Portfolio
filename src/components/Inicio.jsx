@@ -15,7 +15,11 @@ const buttonVariants = {
 };
 
 const Inicio = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  if (!i18n.isInitialized) {
+    return null; // No renderizar nada hasta que i18next esté listo
+  }
 
   const botones = [
     { path: "/sobremi", key: "sobreMi" },
