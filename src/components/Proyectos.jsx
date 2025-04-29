@@ -36,7 +36,7 @@ const Proyectos = () => {
         transition={{ duration: 1, delay: 0.3 }}
         className="text-2xl text-gray-400 mb-12"
       >
-        {t('descripcion')}
+        {t('descripcionProyecto')}
       </motion.p>
 
       <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
