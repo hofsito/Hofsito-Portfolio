@@ -48,7 +48,9 @@ const Proyectos = () => {
           transition={{ duration: 0.5 }}
         >
           <h3 className="text-2xl font-semibold">{t('proyecto_1')}</h3>
-          <p className="mt-2">{t('descripcion')}</p>
+          <p className="mt-2">
+            {t('descripcion')} En este proyecto trabajé en un sistema de gestión de inventarios, utilizando tecnologías como React y Node.js.
+          </p>
         </motion.div>
 
         {/* Cuadro de Proyecto 2 con Animación */}
@@ -59,7 +61,9 @@ const Proyectos = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <h3 className="text-2xl font-semibold">{t('proyecto_2')}</h3>
-          <p className="mt-2">{t('descripcion')}</p>
+          <p className="mt-2">
+            {t('descripcion')} Este proyecto consistió en una aplicación móvil para monitorear hábitos de ejercicio, utilizando Flutter.
+          </p>
         </motion.div>
 
         {/* Cuadro de Proyecto 3 con Animación */}
@@ -70,7 +74,9 @@ const Proyectos = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <h3 className="text-2xl font-semibold">{t('proyecto_3')}</h3>
-          <p className="mt-2">{t('descripcion')}</p>
+          <p className="mt-2">
+            {t('descripcion')} Desarrollo de una página web de comercio electrónico con funcionalidades avanzadas de carrito de compras.
+          </p>
         </motion.div>
       </div>
 
@@ -95,7 +101,7 @@ const Proyectos = () => {
           to="/"
           className="px-8 py-3 bg-purple-800 hover:bg-purple-900 text-lg font-semibold text-white rounded-full shadow-xl transition-transform transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-600"
         >
-          {t('volver_inicio')}
+          {t('volverAlInicio')}
         </Link>
       </motion.div>
     </section>
