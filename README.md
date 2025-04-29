@@ -1,3 +1,26 @@
 # Portafolio Adiel Grazt (Hofsito)
+https://hofsito.github.io/Hofsito-Portfolio/
 
-Es un portafolio basico hecho en React con Vite y Tailwind, estoy empezando en esto y espero poder superarme siempre
+**Tecnologías utilizadas**
+
+⚛React
+
+Tailwind CSS
+
+🎞Framer Motion
+
+React Router
+
+i18next (traducciones multilenguaje)
+
+✉FormSubmit (procesamiento del formulario)
+
+**Características principales**
+
+Soporte multilenguaje (español, inglés y japones).
+
+Protección antispam.
+
+Enlace directo a WhatsApp y usuario de Discord.
+
+Diseño responsive y accesible.
