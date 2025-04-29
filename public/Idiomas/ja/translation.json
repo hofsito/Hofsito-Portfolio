@@ -34,7 +34,8 @@
   "proyecto_3": "プロジェクト3",
   "descripcion": "プロジェクトの簡単な説明。",
   "contacto_message": "多くのプロジェクトの最初になりたい場合は、お気軽にお問い合わせください。",
-  "descripcionProyecto": "私が関わったすべてのプロジェクト (今のところはありません)"
+  "descripcionProyecto": "私が関わったすべてのプロジェクト (今のところはありません)",
+  "whatsappPlaceholder": "WhatsApp 番号 (プレフィックス付き)"
 }
 
 

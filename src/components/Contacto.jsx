@@ -73,6 +73,13 @@ const Contacto = () => {
             tabIndex="-1"
             autoComplete="off"
           />
+          <input
+            type="tel"
+            name="Number"
+            placeholder={t('whatsappPlaceholder')} // Asegúrate de tener esta traducción
+            required
+            className="bg-gray-700 text-white p-4 rounded-lg w-full"
+          />
 
           <input
             type="text"

@@ -34,6 +34,7 @@
   "proyecto_3": "Proyecto 3",
   "descripcion": "Descripción breve del proyecto.",
   "contacto_message": "Si te interesa ser el primero de muchos proyectos, no dudes en contactarme.",
-  "descripcionProyecto": "Todos los proyectos en los que he trabajado (No hay por ahora)"
+  "descripcionProyecto": "Todos los proyectos en los que he trabajado (No hay por ahora)",
+  "whatsappPlaceholder": "Número de WhatsApp (con prefijo)"
 }
 
