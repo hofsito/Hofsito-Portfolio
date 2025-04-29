@@ -21,7 +21,7 @@ i18n
       useSuspense: false,
     },
     backend: {
-      loadPath: `${import.meta.env.BASE_URL}/src/Idiomas/{{lng}}/translation.json`, // Ruta ajustada para GitHub Pages
+      loadPath: `${import.meta.env.BASE_URL}/public/Idiomas/{{lng}}/translation.json`, // Ruta ajustada para GitHub Pages
     },
   });
 
