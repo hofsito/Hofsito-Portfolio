@@ -1,11 +1,10 @@
-// src/components/Habilidades.jsx
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import IdiomaSelector from "./IdiomaSelector";
 import { Link } from "react-router-dom";
 
-// Animaciones
+/* ---------- Animaciones ---------- */
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
   visible: (i = 1) => ({
@@ -24,7 +23,7 @@ const buttonVariants = {
   },
 };
 
-const habilidades = [
+const skills = [
   "JavaScript",
   "React",
   "PHP",
@@ -37,7 +36,7 @@ const habilidades = [
   "Git",
 ];
 
-const solucionesKeys = [
+const solutionKeys = [
   "solucionBlogs",
   "solucionTiendas",
   "solucionLanding",
@@ -54,9 +53,9 @@ const Habilidades = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-16 px-6">
+    <section className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-16 px-6 pb-24">
       <div className="max-w-6xl mx-auto text-center space-y-14">
-        {/* ---------- TÍTULO PRINCIPAL ---------- */}
+        {/* ---------- Título ---------- */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -69,24 +68,24 @@ const Habilidades = () => {
           </p>
         </motion.div>
 
-        {/* ---------- GRID DE HABILIDADES TÉCNICAS ---------- */}
+        {/* ---------- Habilidades técnicas ---------- */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-          {habilidades.map((habilidad, index) => (
+          {skills.map((skill, i) => (
             <motion.div
-              key={index}
-              custom={index}
+              key={skill}
+              custom={i}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeInUp}
               className="bg-gray-800 p-6 rounded-lg shadow-lg"
             >
-              <h3 className="text-xl font-semibold">{habilidad}</h3>
+              <h3 className="text-xl font-semibold">{skill}</h3>
             </motion.div>
           ))}
         </div>
 
-        {/* ---------- SECCIÓN DE SOLUCIONES “LLAVE EN MANO” ---------- */}
+        {/* ---------- Soluciones ---------- */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -101,10 +100,10 @@ const Habilidades = () => {
           </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-            {solucionesKeys.map((key, idx) => (
+            {solutionKeys.map((key, i) => (
               <motion.div
                 key={key}
-                custom={idx}
+                custom={i}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -117,7 +116,7 @@ const Habilidades = () => {
           </div>
         </motion.div>
 
-        {/* ---------- BOTÓN VOLVER AL INICIO ---------- */}
+        {/* ---------- Botón volver ---------- */}
         <motion.div
           initial="hidden"
           animate="visible"
@@ -132,7 +131,7 @@ const Habilidades = () => {
           </Link>
         </motion.div>
 
-        {/* ---------- SELECTOR DE IDIOMA ---------- */}
+        {/* ---------- Selector idioma ---------- */}
         <IdiomaSelector />
       </div>
     </section>
