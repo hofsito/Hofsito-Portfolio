@@ -24,25 +24,37 @@ const buttonVariants = {
 };
 
 const skills = [
-  "JavaScript", "React", "PHP", "Python", "HTML",
-  "CSS", "SQL", "WordPress", "GitHub", "Git",
+  "JavaScript",
+  "React",
+  "PHP",
+  "Python",
+  "HTML",
+  "CSS",
+  "SQL",
+  "WordPress",
+  "GitHub",
+  "Git",
 ];
 
 const solutionKeys = [
-  "solucionBlogs", "solucionTiendas", "solucionLanding",
-  "solucionPortafolio", "solucionCorporativas", "solucionForos",
-  "solucionCatalogos", "solucionReservas",
-  "solucionEventos", "solucionNewsletters",
+  "solucionBlogs",
+  "solucionTiendas",
+  "solucionLanding",
+  "solucionPortafolio",
+  "solucionCorporativas",
+  "solucionForos",
+  "solucionCatalogos",
+  "solucionReservas",
+  "solucionEventos",
+  "solucionNewsletters",
 ];
 
 const Habilidades = () => {
   const { t } = useTranslation();
 
   return (
-    /* h-full: ocupa el alto que le cede <main>. SIN overflow ni estilos extra */
-    <section className="h-full bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-16 px-6 pb-24">
+    <section className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-16 px-6 pb-24">
       <div className="max-w-6xl mx-auto text-center space-y-14">
-
         {/* ---------- Título ---------- */}
         <motion.div
           initial="hidden"
