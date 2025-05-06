@@ -53,17 +53,7 @@ const Habilidades = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="h-full overflow-y-auto
-        bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white
-        py-16 px-6 pb-24
-
-        [scrollbar-width:thin]
-        [&::-webkit-scrollbar]:w-2
-        [&::-webkit-scrollbar-track]:bg-transparent
-        [&::-webkit-scrollbar-thumb]:bg-purple-700
-        [&::-webkit-scrollbar-thumb]:rounded-full
-        [&::-webkit-scrollbar-thumb:hover]:bg-purple-500
-      ">
+    <section className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-16 px-6 pb-24">
       <div className="max-w-6xl mx-auto text-center space-y-14">
         {/* ---------- Título ---------- */}
         <motion.div
