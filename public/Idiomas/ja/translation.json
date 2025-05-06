@@ -35,7 +35,19 @@
   "descripcion": "プロジェクトの簡単な説明。",
   "contacto_message": "多くのプロジェクトの最初になりたい場合は、お気軽にお問い合わせください。",
   "descripcionProyecto": "私が関わったすべてのプロジェクト (今のところはありません)",
-  "whatsappPlaceholder": "WhatsApp 番号 (プレフィックス付き)"
+  "whatsappPlaceholder": "WhatsApp 番号 (プレフィックス付き)",
+  "solucionesTitulo": "あなたのために何を作れる？",
+  "descripcionSoluciones": "プログラミングの知識がなくてもご安心ください。ゼロから構築できるソリューション例は次のとおりです：",
+  "solucionBlogs": "ブログ・ニュースサイト",
+  "solucionTiendas": "オンラインストア（EC）",
+  "solucionLanding": "高コンバージョンのランディングページ",
+  "solucionPortafolio": "個人／エージェンシー向けポートフォリオ",
+  "solucionCorporativas": "コーポレートサイト",
+  "solucionForos": "フォーラム・コミュニティ",
+  "solucionCatalogos": "商品カタログ",
+  "solucionReservas": "予約・アポイントシステム",
+  "solucionEventos": "イベントページ",
+  "solucionNewsletters": "ニュースレター・メーリングリスト"
 }
 
 

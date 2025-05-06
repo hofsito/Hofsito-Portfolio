@@ -35,6 +35,18 @@
   "descripcion": "Descripción breve del proyecto.",
   "contacto_message": "Si te interesa ser el primero de muchos proyectos, no dudes en contactarme.",
   "descripcionProyecto": "Todos los proyectos en los que he trabajado (No hay por ahora)",
-  "whatsappPlaceholder": "Número de WhatsApp (con prefijo)"
+  "whatsappPlaceholder": "Número de WhatsApp (con prefijo)",
+  "solucionesTitulo": "¿Qué puedo crear para ti?",
+  "descripcionSoluciones": "Si no tienes conocimiento de lenguajes de programación, no te preocupes. Estas son soluciones que puedo desarrollar de principio a fin:",
+  "solucionBlogs": "Blogs y sitios de noticias",
+  "solucionTiendas": "Tiendas en línea (e‑commerce)",
+  "solucionLanding": "Landing pages de alta conversión",
+  "solucionPortafolio": "Portafolios personales o de agencia",
+  "solucionCorporativas": "Páginas corporativas",
+  "solucionForos": "Foros y comunidades",
+  "solucionCatalogos": "Catálogos de productos",
+  "solucionReservas": "Sistemas de reservas y citas",
+  "solucionEventos": "Páginas de eventos",
+  "solucionNewsletters": "Boletines y newsletters"
 }
 

@@ -35,6 +35,18 @@
   "descripcion": "Brief description of the project.",
   "contacto_message": "If you're interested in being the first of many projects, don't hesitate to contact me.",
   "descripcionProyecto": "All the projects I've worked on (None for now)",
-  "whatsappPlaceholder": "WhatsApp number (with prefix)"
+  "whatsappPlaceholder": "WhatsApp number (with prefix)",
+  "solucionesTitulo": "What can I build for you?",
+  "descripcionSoluciones": "If you have no programming knowledge, don't worry. Here are end‑to‑end solutions I can create so you can focus on your business:",
+  "solucionBlogs": "Blogs and news sites",
+  "solucionTiendas": "Online stores (e‑commerce)",
+  "solucionLanding": "High‑conversion landing pages",
+  "solucionPortafolio": "Personal or agency portfolios",
+  "solucionCorporativas": "Corporate websites",
+  "solucionForos": "Forums and communities",
+  "solucionCatalogos": "Product catalogs",
+  "solucionReservas": "Booking and appointment systems",
+  "solucionEventos": "Event pages",
+  "solucionNewsletters": "Newsletters and mailing lists"
 }
 

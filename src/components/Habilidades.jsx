@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import IdiomaSelector from "./IdiomaSelector";
 import { Link } from "react-router-dom";
 
+// Animaciones
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
   visible: (i = 1) => ({
@@ -13,6 +14,7 @@ const fadeInUp = {
     transition: { delay: i * 0.1, duration: 0.5, ease: "easeOut" },
   }),
 };
+
 const buttonVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
@@ -21,6 +23,7 @@ const buttonVariants = {
     transition: { delay: 0.2, duration: 0.6, ease: "easeOut" },
   },
 };
+
 const habilidades = [
   "JavaScript",
   "React",
@@ -30,8 +33,21 @@ const habilidades = [
   "CSS",
   "SQL",
   "WordPress",
-  "Github",
-  "GIT"
+  "GitHub",
+  "Git",
+];
+
+const solucionesKeys = [
+  "solucionBlogs",
+  "solucionTiendas",
+  "solucionLanding",
+  "solucionPortafolio",
+  "solucionCorporativas",
+  "solucionForos",
+  "solucionCatalogos",
+  "solucionReservas",
+  "solucionEventos",
+  "solucionNewsletters",
 ];
 
 const Habilidades = () => {
@@ -39,22 +55,21 @@ const Habilidades = () => {
 
   return (
     <section className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-16 px-6">
-
-      <div className="max-w-6xl mx-auto text-center space-y-12">
-        {/* Título */}
+      <div className="max-w-6xl mx-auto text-center space-y-14">
+        {/* ---------- TÍTULO PRINCIPAL ---------- */}
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeInUp}
         >
-          <h2 className="text-4xl font-bold">{t('habilidades')}</h2>
+          <h2 className="text-4xl font-bold">{t("habilidades")}</h2>
           <p className="mt-4 text-lg text-gray-300">
-            {t('descripcionHabilidades')}
+            {t("descripcionHabilidades")}
           </p>
         </motion.div>
 
-        {/* Habilidades */}
+        {/* ---------- GRID DE HABILIDADES TÉCNICAS ---------- */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
           {habilidades.map((habilidad, index) => (
             <motion.div
@@ -70,20 +85,54 @@ const Habilidades = () => {
             </motion.div>
           ))}
         </div>
-      <motion.div
+
+        {/* ---------- SECCIÓN DE SOLUCIONES “LLAVE EN MANO” ---------- */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
+          className="space-y-10 mt-12"
+        >
+          <h2 className="text-3xl font-bold">{t("solucionesTitulo")}</h2>
+
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+            {t("descripcionSoluciones")}
+          </p>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+            {solucionesKeys.map((key, idx) => (
+              <motion.div
+                key={key}
+                custom={idx}
                 initial="hidden"
-                animate="visible"
-                variants={buttonVariants}
-                className="text-right"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeInUp}
+                className="bg-purple-800/20 backdrop-blur-lg p-6 rounded-lg shadow-lg"
               >
-                <Link
-                  to="/"
-                  className="px-8 py-3 bg-purple-800 hover:bg-purple-900 text-lg font-semibold text-white rounded-full shadow-xl transition-transform transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-600"
-                >
-                  {t("volverAlInicio")}
-                </Link>
+                <h3 className="text-lg font-medium">{t(key)}</h3>
               </motion.div>
-        {/* Selector idioma */}
+            ))}
+          </div>
+        </motion.div>
+
+        {/* ---------- BOTÓN VOLVER AL INICIO ---------- */}
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={buttonVariants}
+          className="text-right"
+        >
+          <Link
+            to="/"
+            className="px-8 py-3 bg-purple-800 hover:bg-purple-900 text-lg font-semibold text-white rounded-full shadow-xl transition-transform transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-600"
+          >
+            {t("volverAlInicio")}
+          </Link>
+        </motion.div>
+
+        {/* ---------- SELECTOR DE IDIOMA ---------- */}
         <IdiomaSelector />
       </div>
     </section>
