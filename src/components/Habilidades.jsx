@@ -1,5 +1,4 @@
-// src/components/Habilidades.jsx
-import React, { useEffect } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import IdiomaSelector from "./IdiomaSelector";
@@ -25,62 +24,23 @@ const buttonVariants = {
 };
 
 const skills = [
-  "JavaScript",
-  "React",
-  "PHP",
-  "Python",
-  "HTML",
-  "CSS",
-  "SQL",
-  "WordPress",
-  "GitHub",
-  "Git",
+  "JavaScript", "React", "PHP", "Python", "HTML",
+  "CSS", "SQL", "WordPress", "GitHub", "Git",
 ];
 
 const solutionKeys = [
-  "solucionBlogs",
-  "solucionTiendas",
-  "solucionLanding",
-  "solucionPortafolio",
-  "solucionCorporativas",
-  "solucionForos",
-  "solucionCatalogos",
-  "solucionReservas",
-  "solucionEventos",
-  "solucionNewsletters",
+  "solucionBlogs", "solucionTiendas", "solucionLanding",
+  "solucionPortafolio", "solucionCorporativas", "solucionForos",
+  "solucionCatalogos", "solucionReservas",
+  "solucionEventos", "solucionNewsletters",
 ];
 
 const Habilidades = () => {
   const { t } = useTranslation();
 
-  /* ── Ocultamos la scrollbar del <main> SOLO mientras esta página está montada ── */
-  useEffect(() => {
-    const main = document.querySelector("main");
-    if (!main) return;
-    const prevOverflow = main.style.overflowY;
-    main.style.overflowY = "hidden";
-    return () => {
-      main.style.overflowY = prevOverflow;
-    };
-  }, []);
-
   return (
-    /*  h-full: ocupa 100 vh – footer  |  overflow-y-auto: scrollbar interna
-        Scrollbar decorada usando utilidades arbitrarias Tailwind (no plugins) */
-    <section
-      className="
-        h-full overflow-y-auto
-        bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white
-        py-16 px-6 pb-24
-
-        [scrollbar-width:thin]
-        [&::-webkit-scrollbar]:w-2
-        [&::-webkit-scrollbar-track]:bg-transparent
-        [&::-webkit-scrollbar-thumb]:bg-purple-700
-        [&::-webkit-scrollbar-thumb]:rounded-full
-        [&::-webkit-scrollbar-thumb:hover]:bg-purple-500
-      "
-    >
+    /* h-full: ocupa el alto que le cede <main>. SIN overflow ni estilos extra */
+    <section className="h-full bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-16 px-6 pb-24">
       <div className="max-w-6xl mx-auto text-center space-y-14">
 
         {/* ---------- Título ---------- */}
