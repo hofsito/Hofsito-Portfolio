@@ -1,4 +1,5 @@
-import React from "react";
+// src/components/Habilidades.jsx
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import IdiomaSelector from "./IdiomaSelector";
@@ -52,9 +53,36 @@ const solutionKeys = [
 const Habilidades = () => {
   const { t } = useTranslation();
 
+  /* ── Ocultamos la scrollbar del <main> SOLO mientras esta página está montada ── */
+  useEffect(() => {
+    const main = document.querySelector("main");
+    if (!main) return;
+    const prevOverflow = main.style.overflowY;
+    main.style.overflowY = "hidden";
+    return () => {
+      main.style.overflowY = prevOverflow;
+    };
+  }, []);
+
   return (
-    <section className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-16 px-6 pb-24">
+    /*  h-full: ocupa 100 vh – footer  |  overflow-y-auto: scrollbar interna
+        Scrollbar decorada usando utilidades arbitrarias Tailwind (no plugins) */
+    <section
+      className="
+        h-full overflow-y-auto
+        bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white
+        py-16 px-6 pb-24
+
+        [scrollbar-width:thin]
+        [&::-webkit-scrollbar]:w-2
+        [&::-webkit-scrollbar-track]:bg-transparent
+        [&::-webkit-scrollbar-thumb]:bg-purple-700
+        [&::-webkit-scrollbar-thumb]:rounded-full
+        [&::-webkit-scrollbar-thumb:hover]:bg-purple-500
+      "
+    >
       <div className="max-w-6xl mx-auto text-center space-y-14">
+
         {/* ---------- Título ---------- */}
         <motion.div
           initial="hidden"
