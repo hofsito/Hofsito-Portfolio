@@ -53,7 +53,7 @@ const Habilidades = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-16 px-6 pb-24">
+    <section className="min-h-full bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-16 px-6 pb-24">
       <div className="max-w-6xl mx-auto text-center space-y-14">
         {/* ---------- Título ---------- */}
         <motion.div
