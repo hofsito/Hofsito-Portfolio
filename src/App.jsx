@@ -12,11 +12,10 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <Router>
-      {/* Wrapper global con gradiente y layout en columna */}
       <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white">
 
-        {/* Contenedor que crece para empujar el footer */}
-        <div className="flex-grow">
+        {/* Contenido con padding‑bottom para que el footer fijo no lo tape */}
+        <div className="flex-grow pb-20">   {/* 20 ≈ 5rem (alto del footer) */}
           <Routes>
             <Route path="/" element={<Inicio />} />
             <Route path="/sobremi" element={<SobreMi />} />
@@ -26,7 +25,6 @@ const App = () => {
           </Routes>
         </div>
 
-        {/* Pie de página */}
         <Footer />
       </div>
     </Router>
